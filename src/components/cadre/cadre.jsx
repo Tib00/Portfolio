@@ -1,16 +1,16 @@
 import React from 'react';
 import './cadre.scss';
+import { Link } from 'react-router-dom'; // Importez Link depuis react-router-dom
 
-const Cadre = ({ title, cover, url }) => {
+const Cadre = ({ titre, url, imageAlt, imageUrl }) => { // Ajoutez les props url, imageAlt et imageUrl
   return (
     <div className="cadre-container">
-      <div className="cadre-component">
-        <div className="cadre-content">
-          <img src={cover} alt={title} className="cadre-cover" />
-          <h3>{title}</h3>
-          <a href={url} target="_blank" rel="noopener noreferrer">Visiter le site</a>
-        </div>
+      <div className='img-container'>
+        <Link to={url} target="_blank" rel="noopener noreferrer"> {/* Utilisez Link pour créer le lien */}
+          <img src={imageUrl} alt={imageAlt} /> {/* Utilisez imageUrl et imageAlt */}
+        </Link>
       </div>
+      <h2>{titre}</h2>
     </div>
   );
 };
