@@ -9,7 +9,7 @@ import SiteWeb6Image from '../../assets/fond_3.jpg';
 
 function Portfolio() {
   const sitesWeb = [
-    { titre: 'Site web d\'annonces immobilières', image: SiteWeb1Image, url: 'https://tib00.github.io/Projet_2_Booki/' },
+    { titre: 'Site web d\'annonces de logements', image: SiteWeb1Image, url: 'https://tib00.github.io/Projet_2_Booki/' },
     { titre: 'Site de designer', image: SiteWeb2Image, url: '' },
     { titre: 'Site de photographe', image: SiteWeb3Image, url: 'https://tib00.github.io/Projet_5_Carducci/' },
     { titre: 'Site d\'annonces immobilières', image: SiteWeb4Image, url: '' },

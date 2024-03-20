@@ -1,0 +1,44 @@
+.collapse-container {
+    margin-bottom: 20px; /* Ajoute de l'espace en bas de chaque collapse */
+    border-radius: 10px; /* Bordures arrondies */
+    background-color: #0d6efd; /* Fond bleu foncé */
+    color: white; /* Couleur du texte */
+  
+    /* Ajoutez d'autres styles selon vos besoins */
+  }
+  
+  .collapse-header {
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .collapse-header span {
+    font-weight: bold;
+  }
+  
+  .arrow-icon {
+    font-size: 1.5em;
+    transition: transform 0.3s ease
+  }
+  
+  .down {
+    transform: rotate(0deg);
+  }
+  
+  .up {
+    transform: rotate(360deg);
+  }
+  
+  .collapse-content {
+    background-color: #bee1ff; /* Fond bleu ciel */
+    padding: 10px;
+    border-bottom-left-radius: 10px; /* Bordure arrondie en bas à gauche */
+    border-bottom-right-radius: 10px; /* Bordure arrondie en bas à droite */
+  }
+  /* Ajoute une marge en haut uniquement pour le premier collapse */
+.collapse-container:first-child {
+    margin-top: 20px;
+  }

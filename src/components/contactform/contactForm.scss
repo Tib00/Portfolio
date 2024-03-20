@@ -1,0 +1,63 @@
+.contact-form-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; // Pour que padding ne modifie pas la largeur
+    transition: border-color 0.3s;
+  
+    &:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  .form-group textarea {
+    height: 150px; /* Ajustez cette valeur selon vos besoins */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; // Pour que le padding ne modifie pas la largeur ou la hauteur externe
+    transition: border-color 0.3s;
+  
+    &:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+}
+.contact-form-container:hover {
+  transform: scale(1.05); /* Légère augmentation de l'échelle au survol */
+}

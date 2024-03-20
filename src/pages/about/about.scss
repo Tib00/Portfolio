@@ -1,0 +1,32 @@
+.about{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.alignContact{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.borderCoord {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+
+    p{
+        font-size: 22px;
+    }
+  }
+  .borderCoord:hover {
+    transform: scale(1.05); /* Légère augmentation de l'échelle au survol */
+  }

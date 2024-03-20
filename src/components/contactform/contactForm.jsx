@@ -21,7 +21,6 @@ function ContactForm() {
 
   return (
     <div className="contact-form-container">
-      <h2>Une question ? Contactez-moi</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Nom :</label>
