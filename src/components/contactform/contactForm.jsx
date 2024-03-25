@@ -4,7 +4,7 @@ import './contactForm.scss';
 function ContactForm() {
   return (
     <div className="contact-form-container">
-       <form id="contact" method='POST' netlify>
+       <form id="contact" name="contact" method='POST' netlify>
         <input type="hidden" name="form-name" value="contact" />
           <div className="form-group">
             <label>Nom :</label>
