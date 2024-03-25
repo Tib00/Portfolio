@@ -13,27 +13,36 @@ function ContactForm() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Ici vous pouvez envoyer les données du formulaire à votre backend pour traitement
-    console.log(formData);
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+    
+  //   console.log("Formulaire soumis, données du formulaire :", formData);
+    
+  //   fetch('http://localhost:3001/contact', { // Mettez à jour la route ici
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify(formData),
+  //   })
+  //   .then(response => response.json())
+  //   .then(data => {
+  //     console.log("Réponse du serveur :", data);
+  //     // Ajoutez ici toute autre manipulation de la réponse du serveur si nécessaire
+  //   })
+  //   .catch((error) => console.error('Error:', error));
+  // };
 
   return (
     <div className="contact-form-container">
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="name">Nom :</label>
-          <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="email">Email :</label>
-          <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="message">Message :</label>
-          <textarea id="message" name="message" value={formData.message} onChange={handleChange} required />
-        </div>
+       <form method='POST' netlify> {/*form onSubmit={handleSubmit} */}
+        <input type="hidden" name="form-name" value="contact" />
+          <label>Nom :</label>
+          <input type="text" id="name" name="name" required />
+          <label >Email :</label>
+          <input type="email" id="email" name="email" required />
+          <label >Message :</label>
+          <textarea id="message" name="message" required />
         <button type="submit">Envoyer</button>
       </form>
     </div>

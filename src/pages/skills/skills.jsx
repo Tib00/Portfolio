@@ -2,19 +2,21 @@ import React from 'react';
 import Collapse from '../../components/collapse/collapse'
 import './skills.scss'
 
+import { IoMdArrowDroprightCircle } from "react-icons/io";
+
 const Skills = () => {
   return (
     <div className="skills">
       <h2>Compétences</h2>
       <div className='placements'>
         <div className='placeLangage'>
-          <h3>Langages connus</h3>
-          <p>
-            html et CSS<br />
-            Javascript<br />
-            React frontend et backend<br />
-            Backend: MongoDB<br />
-          </p>
+        <h3>Langages connus</h3>
+        <ul className="arrow-list">
+          <li><IoMdArrowDroprightCircle /> HTML et CSS</li>
+          <li><IoMdArrowDroprightCircle /> Javascript</li>
+          <li><IoMdArrowDroprightCircle /> React frontend et backend</li>
+          <li><IoMdArrowDroprightCircle /> Backend: MongoDB</li>
+        </ul>
         </div>
         <div className='placeCollapse'>
           <Collapse title="Développement et intégration web">
