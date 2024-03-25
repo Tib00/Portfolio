@@ -1,13 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './contactForm.scss';
 
 function ContactForm() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
   return (
     <div className="contact-form-container">
        <form method='POST' netlify>
