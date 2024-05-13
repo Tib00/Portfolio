@@ -1,40 +1,47 @@
-header {
-  background-image: url('../../assets/image_de_fond.webp'); // Remplacez 'image_de_fond.jpg' par le chemin relatif de votre image
-  background-size: cover;
-  background-position: center;
-  height: 200px; // Ajustez la hauteur selon vos besoins
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white; // Couleur du texte
-  text-align: center;
-
-  // Autres styles pour votre en-tête
-
-  // Styles pour la'en-tête
-  nav {
-    ul {
-      list-style: none; // Supprimer les puces des listes non ordonnées
-      display: flex; // Aligner les éléments de la liste en ligne
-      padding: 0; // Supprimer le padding par défaut de la liste
-      margin: 0; // Supprimer la marge par défaut de la liste
-    }
-
-    li {
-      margin: 0 10px; // Ajouter une marge entre chaque élément de la liste
-    }
-  }
-
-  a {
-    color: white; // Couleur du texte des liens
-    text-decoration: none; // Supprimer le soulignement par défaut
-    transition: all 0.3s ease; // Transition fluide de 0.3 seconde
-    font-size: 22px; // Taille de police par défaut pour les liens
-  }
-
-  a:hover {
-    font-size: 28px; // Augmentez la taille de police au survol
-    font-weight: bold; // Mettez en gras au survol
-  }
+.header {
+  display: flex; /* Utilisez la flexbox pour aligner les éléments horizontalement */
+  align-items: center; /* Alignez les éléments verticalement au centre */
+  justify-content: space-between; /* Alignez les éléments à l'extrême gauche et à l'extrême droite */
+  background-color:#E1E1E1;
 }
 
+.logo {
+  max-height: 16vh; /* Ajustez la taille maximale du logo selon vos préférences */
+  margin: -20px 0px -50px 25%;
+}
+
+.ownerName{
+  font-size: 18px;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+
+nav ul {
+  list-style: none; /* Supprimez les puces de la liste */
+  display: flex; /* Alignez les éléments de la liste en ligne */
+  margin: 0 25px 0px 0px; /* Supprimez la marge par défaut de la liste */
+  padding: 0; /* Supprimez le padding par défaut de la liste */
+}
+
+nav ul li {
+  margin-left: 10px; /* Ajoutez une marge à gauche entre chaque élément de la liste */
+}
+
+nav ul li:first-child {
+  margin-left: 0; /* Supprimez la marge à gauche du premier élément de la liste */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Supprimez la marge à droite du dernier élément de la liste */
+}
+
+nav a {
+  color: inherit; /* Utilisez la couleur par défaut du texte */
+  text-decoration: none; /* Supprimez le soulignement */
+  font-size: 20px; /* Taille de la police */
+  transition: all 0.2s ease; /* Transition plus fluide */
+}
+
+nav a:hover {
+  font-weight: bold; /* Passage en gras au survol */
+}

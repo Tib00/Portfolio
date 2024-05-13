@@ -10,12 +10,12 @@ const About = () => {
         <div className='alignContact'>
           < ContactForm />
           <div className='borderCoord'>
-              <p itemprop="telephone"> Tel: 06 35 54 52 71</p> 
+              <p itemprop="telephone"> Tel: 01 23 45 67 89</p> 
               <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"> 
               <p>Adresse: </p>
-              <p itemprop="streetAddress">41 cours Pinteville</p>
-              <p itemprop="postalCode">77100</p> 
-              <p itemprop="addressLocality">Meaux</p>
+              <p itemprop="streetAddress">4</p>
+              <p itemprop="postalCode">00000</p> 
+              <p itemprop="addressLocality">Bille</p>
           </div>
         </div>
       </div>

@@ -11,3 +11,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body {
+  font-family: 'Lora', serif; /* Appliquer la police Lora à tout le texte dans le corps du document */
+}
