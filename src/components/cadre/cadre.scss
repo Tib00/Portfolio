@@ -4,9 +4,12 @@
   align-items: center;
   width: calc(33.33% - 20px);
   margin-bottom: 20px;
-  border: 2px solid rgba(128, 128, 128, 0.589);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   background-image: linear-gradient(to bottom, whitesmoke, #E1E1E1);
+}
+.cadre-container:hover{
+transform: scale(1.05);
 }
 
 .img-container {
