@@ -1,38 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './slider.scss';
-//import FlecheD from '../../assets/fleche_droite.png'
-//import FlecheG from '../../assets/fleche_gauche.png'
+import Fond1 from '../../assets/fond_1.jpg';
+import Fond2 from '../../assets/fond_2.jpg';
+import Fond3 from '../../assets/fond_5.jpg';
 
-const Slider = ({ pictures }) => {
+const Slider = () => {
+  const pictures = [Fond1, Fond2, Fond3]; // Tableau contenant vos images
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
-  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
+    }, 3000); // Changement d'image toutes les 3 secondes (3000 millisecondes)
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length);
-  };
-
-  // Vérifiez s'il y a plus d'une photo
-  const isMultiplePictures = pictures.length > 1;
+    return () => clearInterval(interval); // Nettoie l'intervalle lorsque le composant est démonté
+  }, [pictures.length]); // Utilisez pictures.length comme dépendance pour s'assurer que l'effet est réexécuté lorsque le nombre d'images change
 
   return (
-    <div className="slider">
-      {isMultiplePictures && (
-        <button className="left-button" onClick={prevSlide}>
-          <img src={FlecheG} alt="Previous" />
-        </button>
-      )}
+    <div className="sliderContainer">
       <img src={pictures[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
-      {isMultiplePictures && (
-        <button className="right-button" onClick={nextSlide}>
-          <img src={FlecheD} alt="Next" />
-        </button>
-      )}
-      {isMultiplePictures && (
-        <div className="photo-counter">{`${currentIndex + 1} / ${pictures.length}`}</div>
-      )}
     </div>
   );
 };

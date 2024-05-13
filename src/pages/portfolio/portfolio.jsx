@@ -20,7 +20,7 @@ function Portfolio() {
 
   return (
     <div>
-      <h2 className="portfolio-title">Quelques uns de mes sites webs</h2>
+      <h2 className="portfolio-title">Quelques unes de mes créations</h2>
       {/* Utilisez PlaceCadre et passez-lui les données des sites Web en tant que propriété */}
       <PlaceCadre sitesWeb={sitesWeb} />
     </div>
