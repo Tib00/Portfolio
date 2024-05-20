@@ -37,14 +37,14 @@ function Portfolio() {
     {
       titre: 'Site de vente de livres',
       image: SiteWeb5Image,
-      url: 'https://github.com/Tib00/Projet_7_Book',
+      url: 'https://projet-7-book.vercel.app/',
       codeSourceUrl: 'https://github.com/Tib00/Projet_7_Book.git'
     },
     {
       titre: 'Site test',
       image: SiteWeb5Image,
-      url: '',
-      codeSourceUrl: ''
+      url: 'https://github.com/Tib00/Erevia.git',
+      codeSourceUrl: 'https://github.com/Tib00/Erevia.git'
     },
     // Ajoutez d'autres sites web ici si nécessaire
   ];

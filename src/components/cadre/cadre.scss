@@ -55,12 +55,12 @@ box-shadow: 0 0 10px rgba(0, 0, 255, 0.4); /* Ombre de boîte bleue lors du surv
   box-shadow: 0 0 10px rgba(0, 0, 255, 0.4); /* Ombre de boîte bleue lors du survol */
 }
 
-.codeSource a {
+.codeSource {
   color: inherit;
   text-decoration: none;
 }
 
-.codeSource a:hover {
+.codeSource:hover {
   cursor: pointer;
   text-decoration: none;
 }

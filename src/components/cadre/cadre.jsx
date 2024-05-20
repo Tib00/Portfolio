@@ -13,11 +13,11 @@ const Cadre = ({ titre, url, imageAlt, imageUrl, codeSourceUrl }) => { // Ajoute
         </div>
         <h2>{titre}</h2>
       </div>
-        <div className='codeSource'>
-          <Link to={codeSourceUrl} target="_blank" rel="noopener noreferrer">
+        <Link to={codeSourceUrl} target="_blank" rel="noopener noreferrer" className='codeSource'>
+          <div>
             Afficher le code source
-          </Link>
-        </div>
+          </div>
+        </Link>
     </div>
   );
 };
