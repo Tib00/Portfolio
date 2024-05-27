@@ -1,19 +1,32 @@
 import React from 'react';
 import './home.scss';
-import Slider from '../../components/slider/slider'
-
+import computer from '../../assets/image_de_fond.jpg'; 
 
 const Home = () => {
   return (
     <div className="home-container">
-        <Slider />
       <div className="content-container">
         <div className="content">
-          <h2>Développeur web</h2> 
-          <p>Au service de votre entreprise</p>
-          <h2>Création de sites webs</h2>
-          <p>Créez des expériences web exceptionnelles avec un développeur web créatif et innovant.</p>
+          <h2>Développeur web junior</h2> 
+          <p>Bonjour,<br />
+          Je m'appelle Thibaud Monpetit, je suis un développeur web junior passionné par la création de solutions numériques innovantes. 
+          Ayant récemment terminé ma formation en développement web, j'ai acquis une solide maîtrise des technologies front-end et back-end, 
+          me permettant de concevoir des sites web interactifs et performants.</p>
+          <p>
+          Actuellement à la recherche de nouvelles opportunités de travail,
+          je sollicite votre attention afin de mettre en pratique mes compétences et de contribuer activement à des projets stimulants. 
+          Mon objectif est de devenir un développeur full-stack compétent, 
+          capable de prendre en charge des projets du début à la fin, tout en continuant à développer mes compétences techniques et interpersonnelles.
+          </p>
+          <p className='philosophy'>
+          Ma philosophie:<br />
+          "Au delà du code, le web pour moi c'est avant tout une aventure humaine, des échanges, des rencontres et un apprentissage permanent afin d'être chaque jour un peu plus compétent." 
+          </p>
+          <p className='future'>Actuellement en train de:<br/>Solidifier mes compétences back-end<br />Elargir mes compétences sur Angular et Go<br/>Tenter de créer de petits jeux vidéos</p>
         </div>
+      </div>
+      <div className='placeButtons'>
+        <img src={computer} alt="un écran" />
       </div>
     </div>
   );

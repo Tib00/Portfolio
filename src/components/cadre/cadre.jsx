@@ -2,22 +2,34 @@ import React from 'react';
 import './cadre.scss';
 import { Link } from 'react-router-dom'; // Importez Link depuis react-router-dom
 
-const Cadre = ({ titre, url, imageAlt, imageUrl, codeSourceUrl }) => { // Ajoutez les props url, imageAlt et imageUrl
+const Cadre = ({ titre, description, langage, competences, url, imageAlt, imageUrl, codeSourceUrl }) => { // Ajoutez les props url, imageAlt et imageUrl
   return (
-    <div className='columnCreation'>
-      <div className="cadre-container">
-        <div className='img-container'>
-          <Link to={url} target="_blank" rel="noopener noreferrer"> {/* Utilisez Link pour créer le lien */}
-            <img src={imageUrl} alt={imageAlt} /> {/* Utilisez imageUrl et imageAlt */}
-          </Link>
-        </div>
-        <h2>{titre}</h2>
+    <div className="cadre-container">
+      <div className='img-container'>
+        <img src={imageUrl} alt={imageAlt} /> {/* Utilisez imageUrl et imageAlt */}
       </div>
-        <Link to={codeSourceUrl} target="_blank" rel="noopener noreferrer" className='codeSource'>
-          <div>
-            Afficher le code source
-          </div>
-        </Link>
+      <div className='textContainer'>
+        <h2>{titre}</h2>
+        <div className='textPlace'>
+          <div className='description'>{description}</div>
+          <div className='langages'>{langage}</div>
+          <ul className='competences'>
+            {competences.map((competence, index) => (
+              <li key={index}>{competence}</li>
+            ))}
+          </ul>
+        </div>
+        <div className='linkPlace'>
+          <Link to={url} target="_blank" rel="noopener noreferrer" className='siteOverview'>
+            Voir le site
+          </Link>
+          <Link to={codeSourceUrl} target="_blank" rel="noopener noreferrer" className='codeSource'>
+            <div>
+              Afficher le code source
+            </div>
+          </Link>
+        </div>  
+      </div>
     </div>
   );
 };

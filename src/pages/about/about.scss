@@ -5,12 +5,14 @@
     flex-direction: column;
     align-items: center;
 }
+
 .alignContact{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+
 .borderCoord {
     width: 100%;
     max-width: 500px;
@@ -26,6 +28,7 @@
         font-size: 22px;
     }
   }
+
   .borderCoord:hover {
     transform: scale(1.05); /* Légère augmentation de l'échelle au survol */
   }

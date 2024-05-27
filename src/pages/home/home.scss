@@ -1,20 +1,48 @@
 .home-container {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Hauteur de la fenêtre */
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Hauteur de la fenêtre */
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+.content-container {
+  background-color: #E1E1E1; /* Gris foncé semi-transparent */
+  text-align: center;
+  width: 50%;
+  height: 100vh;
+  border-radius: 20px;
+}
+
+.content {
+  color: black; /* Texte noir */
+}
+
+.philosophy{
+  background-color: #fdfdf3;
+  width: 95%;
+  border-radius: 25px;
+}
+
+.placeButtons {
+  width: 50%;
+  height: 100vh;
+  border-radius: 20px;
+  overflow: hidden; // Ajoutez ceci pour s'assurer que l'image reste dans le conteneur
+
+  img {
+    object-fit: contain; // Utilisez object-fit: contain pour que l'image s'ajuste correctement
+    border-radius: inherit; // Appliquez le même border-radius à l'image
   }
-  
-  .content-container {
-    background-color: #E1E1E1; /* Gris foncé semi-transparent */
-    text-align: center;
-    position: absolute;
-    top: 50%; /* Positionne le haut du conteneur au milieu de son parent */
-    left: 0;
-    width: 100%;
-    transform: translateY(-100%); /* Décale le conteneur vers le haut de moitié de sa propre hauteur */
-    z-index: 1; /* Assure que le contenu est devant le slider */
-  }
-  
-  .content {
-    color: black; /* Texte noir */
-  }
+}
+
+.content{
+  font-size: 18px;
+  width: 90%;
+  margin-left: 5%;
+}
+.philosophy{
+  padding: 10px;
+}

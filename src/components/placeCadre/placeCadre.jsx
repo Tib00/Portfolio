@@ -9,6 +9,9 @@ const PlaceCadre = ({ sitesWeb }) => {
         <Cadre
           key={index}
           titre={site.titre}
+          description = {site.description}
+          langage = {site.langage}
+          competences = {site.competences}
           url={site.url} // Passez l'URL du site comme prop à Cadre
           imageAlt={site.titre} // Passez le texte alternatif de l'image comme prop à Cadre
           imageUrl={site.image} // Passez l'URL de l'image comme prop à Cadre
