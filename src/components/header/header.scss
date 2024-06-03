@@ -40,8 +40,23 @@ nav a {
   text-decoration: none; /* Supprimez le soulignement */
   font-size: 20px; /* Taille de la police */
   transition: all 0.2s ease; /* Transition plus fluide */
+
+  @media (max-width: 800px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 16px;
+  }
+
 }
 
 nav a:hover {
   font-weight: bold; /* Passage en gras au survol */
+}
+
+@media (max-width: 800px){
+  .header{
+    flex-direction: column;
+  }
 }

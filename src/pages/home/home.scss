@@ -1,34 +1,58 @@
 .home-container {
   position: relative;
   width: 100%;
-  height: 100vh; /* Hauteur de la fenêtre */
+  height: 80vh; /* Hauteur de la fenêtre */
   display: flex;
   flex-direction: row;
   margin-top: 20px;
   gap: 5px;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    margin-left: 2.5%;
+  }
 }
 
 .content-container {
   background-color: #E1E1E1; /* Gris foncé semi-transparent */
   text-align: center;
   width: 50%;
-  height: 100vh;
+  height: 80vh;
   border-radius: 20px;
+
+  @media (max-width: 800px) {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .content {
   color: black; /* Texte noir */
+  font-size: 18px;
+  width: 90%;
+  margin-left: 5%;
+
+  @media (max-width: 800px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 14px;
+  }
 }
 
-.philosophy{
+.philosophy {
   background-color: #fdfdf3;
   width: 95%;
   border-radius: 25px;
+  padding: 10px;
 }
 
 .placeButtons {
   width: 50%;
-  height: 100vh;
+  height: 80vh;
   border-radius: 20px;
   overflow: hidden; // Ajoutez ceci pour s'assurer que l'image reste dans le conteneur
 
@@ -36,13 +60,33 @@
     object-fit: contain; // Utilisez object-fit: contain pour que l'image s'ajuste correctement
     border-radius: inherit; // Appliquez le même border-radius à l'image
   }
+
+  @media (max-width: 800px) {
+    width: 100%;
+    height: 50vh;
+
+    img {
+      height: 50vh;
+    }
+  }
 }
 
-.content{
-  font-size: 18px;
-  width: 90%;
-  margin-left: 5%;
-}
-.philosophy{
-  padding: 10px;
+@media (max-width: 400px) {
+  .home-container {
+    margin-top: 10px;
+    gap: 2px;
+  }
+
+  .content-container {
+    padding: 10px;
+  }
+
+  .philosophy {
+    font-size: 12px;
+  }
+
+  .placeButtons img {
+    width: 100%;
+    height: auto;
+  }
 }

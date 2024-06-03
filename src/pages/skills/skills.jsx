@@ -1,35 +1,34 @@
 import React from 'react';
-import Collapse from '../../components/collapse/collapse'
 import './skills.scss'
+import html from '../../assets/logo_html.png'
+import css from '../../assets/logo_css.png'
+import js from '../../assets/logo_js.png'
+import mongo from '../../assets/logo_mongo.png'
+import react from '../../assets/logo_react.png'
+import node from '../../assets/logo_node.png'
 
-import { IoMdArrowDroprightCircle } from "react-icons/io";
+
 
 const Skills = () => {
   return (
     <div className="skills">
-      <h2>Compétences</h2>
-      <div className='placements'>
-        <div className='placeLangage'>
-        <h3>Langages connus</h3>
-        <ul className="arrow-list">
-          <li><IoMdArrowDroprightCircle /> HTML et CSS</li>
-          <li><IoMdArrowDroprightCircle /> Javascript</li>
-          <li><IoMdArrowDroprightCircle /> React frontend et backend</li>
-          <li><IoMdArrowDroprightCircle /> Backend: MongoDB</li>
-        </ul>
+        <h2>Technologies</h2>
+        <div className="front-end">
+          <h3>Front-end</h3>
+          <div className="technology">
+            <img className='imgTreatment' src={html} alt="HTML logo" />
+            <img className='imgTreatment' src={css} alt="CSS logo" />
+            <img className='imgJs' src={js} alt="JavaScript logo" />
+            <img className='imgTreatment' src={react} alt="react logo" />
+          </div>
         </div>
-        <div className='placeCollapse'>
-          <Collapse title="Développement et intégration web">
-              <p>Respect de vos maquettes et schémas<br />  Adaptations à vos contraintes techniques<br />  Implémentation d'interfaces responsives</p>
-          </Collapse>
-          <Collapse title="Optimisation et débug">
-              <p>Optimisation de sites web<br />  Recherche et résolution de bugs<br />  Optimisation du référencement naturel (SEO)</p>
-          </Collapse>
-          <Collapse title="Gestion de projets">
-              <p>Respect des délais impartis<br /> Rédaction, présentation et mise en oeuvre de solutions techniques <br /> Mise en place de veille technologique</p>
-          </Collapse>
+        <div className="back-end">
+          <h3>Back-end</h3>
+          <div className="technology">
+              <img src={mongo} alt="MongoDB logo" />
+              <img src={node} alt="node logo" />
+          </div>
         </div>
-      </div>       
     </div>
   );
 };
