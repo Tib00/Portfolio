@@ -10,7 +10,7 @@ const Home = () => {
           <h2>Développeur web junior</h2> 
           <p>Bonjour,<br />
           Je m'appelle Thibaud Monpetit, je suis un développeur web junior passionné par la création de solutions numériques innovantes. 
-          Ayant récemment terminé ma formation en développement web, j'ai acquis une solide maîtrise des technologies front-end et back-end, 
+          Ayant récemment terminé ma formation en développement web chez <a href="https://openclassrooms.com/fr/" target="_blank" rel="noopener noreferrer">OpenClassrooms</a>, j'ai acquis une solide maîtrise des technologies front-end et back-end, 
           me permettant de concevoir des sites web interactifs et performants.</p>
           <p>
           Actuellement à la recherche de nouvelles opportunités de travail,
