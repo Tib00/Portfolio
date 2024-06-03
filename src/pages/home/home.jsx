@@ -22,7 +22,7 @@ const Home = () => {
           Ma philosophie:<br />
           "Au delà du code, le web pour moi c'est avant tout une aventure humaine, des échanges, des rencontres et un apprentissage permanent afin d'être chaque jour un peu plus compétent." 
           </p>
-          <p className='future'>Actuellement en train de:<br/>Solidifier mes compétences back-end<br />Elargir mes compétences sur Angular et Go<br/>Tenter de créer de petits jeux vidéos</p>
+          <p className='future'>Actuellement en train de:<br/>Solidifier mes compétences back-end<br />Elargir mes compétences en sécurité<br/>Approfondir mes connaissance des langages backend (Ruby on rail)</p>
         </div>
       </div>
       <div className='placeButtons'>
