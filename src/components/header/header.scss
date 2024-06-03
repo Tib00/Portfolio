@@ -2,7 +2,15 @@
   display: flex; /* Utilisez la flexbox pour aligner les éléments horizontalement */
   align-items: center; /* Alignez les éléments verticalement au centre */
   justify-content: space-between; /* Alignez les éléments à l'extrême gauche et à l'extrême droite */
-  background-color:#E1E1E1;
+  background-color: #E1E1E1;
+
+  @media (max-width: 800px){
+    width: 98%;
+    margin-left: 1%;
+    padding-bottom: 10px;
+    border-radius: 0 0 15px 15px; /* Appliquez le border-radius aux coins inférieurs */
+  }
+
 }
 
 .logo {
@@ -42,10 +50,10 @@ nav a {
   transition: all 0.2s ease; /* Transition plus fluide */
 
   @media (max-width: 800px) {
-    font-size: 16px;
+    font-size: 20px;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     font-size: 16px;
   }
 
