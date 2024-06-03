@@ -26,7 +26,7 @@ function Portfolio() {
     {
       titre: 'Portfolio de Sophie Bluel',
       image: SiteWeb2Image,
-      url: 'https://github.com/Tib00/Projet_3_Buel',
+      url: '',
       codeSourceUrl: 'https://github.com/Tib00/Projet_3_Buel.git',
       description: 'Un site de designer lui permettant de modifier sa galerie',
       langage: 'Langage: Javascript',
@@ -68,7 +68,7 @@ function Portfolio() {
     {
       titre: 'Mon vieux grimoire',
       image: SiteWeb5Image,
-      url: 'https://projet-7-book.vercel.app/',
+      url: '',
       codeSourceUrl: 'https://github.com/Tib00/Projet_7_Book.git',
       description: 'Un site web de location d\'appartements',
       langage: 'Technologies: Express MongoDB et NodeJS',

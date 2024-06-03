@@ -1,8 +1,8 @@
 import React from 'react';
 import './cadre.scss';
-import { Link } from 'react-router-dom'; // Importez Link depuis react-router-dom
+import { Link } from 'react-router-dom';
 
-const Cadre = ({ titre, description, langage, competences, url, imageAlt, imageUrl, codeSourceUrl }) => { // Ajoutez les props url, imageAlt et imageUrl
+const Cadre = ({ titre, description, langage, competences, url, imageAlt, imageUrl, codeSourceUrl }) => {
   return (
     <div className="cadre-container">
       <div className='img-container'>
@@ -20,15 +20,39 @@ const Cadre = ({ titre, description, langage, competences, url, imageAlt, imageU
           </ul>
         </div>
         <div className='linkPlace'>
-          <Link to={url} target="_blank" rel="noopener noreferrer" className='siteOverview'>
-            Voir le site
-          </Link>
-          <Link to={codeSourceUrl} target="_blank" rel="noopener noreferrer" className='codeSource'>
-            <div>
-              Afficher le code source
+          {url ? (
+            <Link
+              to={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className='siteOverview'
+            >
+              Voir le site
+            </Link>
+          ) : (
+            <div className='siteOverview disabled'>
+              Voir le site
             </div>
-          </Link>
-        </div>  
+          )}
+          {codeSourceUrl ? (
+            <Link
+              to={codeSourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className='codeSource'
+            >
+              <div>
+                Afficher le code source
+              </div>
+            </Link>
+          ) : (
+            <div className='codeSource disabled'>
+              <div>
+                Afficher le code source
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
