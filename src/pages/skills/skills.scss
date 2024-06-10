@@ -43,7 +43,8 @@
 
 .imgJs {
   height: 160px;
-  width: 280px;
+  width: 300px;
+  padding: 10px;
 
   @media (max-width: 800px) {
     height: 120px;
@@ -52,11 +53,27 @@
 
   @media (max-width: 400px) {
     height: 100px;
-    width: 150px;
+    width: 160px;
   }
 }
 
 .technology img {
   max-width: 100%;
   height: auto;
+}
+
+.nodeTreatment {
+  height: 150px;
+  width: 150px;
+  padding: 20px;
+
+  @media (max-width: 800px) {
+    height: 100px;
+    width: 130px;
+  }
+
+  @media (max-width: 400px) {
+    height: 80px;
+    width: 100px;
+  }
 }

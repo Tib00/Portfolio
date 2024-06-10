@@ -26,7 +26,7 @@ const Skills = () => {
           <h3>Back-end</h3>
           <div className="technology">
               <img src={mongo} alt="MongoDB logo" />
-              <img src={node} alt="node logo" />
+              <img className='nodeTreatment' src={node} alt="node logo" />
           </div>
         </div>
     </div>
